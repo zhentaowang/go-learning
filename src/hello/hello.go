@@ -1,7 +1,11 @@
-package main
+package hello
 
-import "fmt"
+import (
+	"fmt"
+
+	"util"
+)
 
 func main() {
-	fmt.Printf("Hello, world.\n")
+	fmt.Printf(util.Reverse("!oG ,olleH"))
 }
