@@ -1,0 +1,121 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "tW6CUyle/6kP5mX4pixEL40uwfg=",
+			"path": "code.aliyun.com/wyunshare/thrift-server",
+			"revision": "5bfda977a3b3585ebacca7fbce9e288cfbd6a33b",
+			"revisionTime": "2017-06-24T08:02:23Z"
+		},
+		{
+			"checksumSHA1": "XHXiSqzGgyrddg808wS6Wihm7nw=",
+			"path": "code.aliyun.com/wyunshare/thrift-server/business",
+			"revision": "5bfda977a3b3585ebacca7fbce9e288cfbd6a33b",
+			"revisionTime": "2017-06-24T08:02:23Z"
+		},
+		{
+			"checksumSHA1": "+p8KITzm6smrvzsu1VHKXSV/FuE=",
+			"path": "code.aliyun.com/wyunshare/thrift-server/conf",
+			"revision": "5bfda977a3b3585ebacca7fbce9e288cfbd6a33b",
+			"revisionTime": "2017-06-24T08:02:23Z"
+		},
+		{
+			"checksumSHA1": "HvdLn1p7j9BUKxHwQMpdx7FaQto=",
+			"path": "code.aliyun.com/wyunshare/thrift-server/gen-go/server",
+			"revision": "5bfda977a3b3585ebacca7fbce9e288cfbd6a33b",
+			"revisionTime": "2017-06-24T08:02:23Z"
+		},
+		{
+			"checksumSHA1": "TK5AZoRFZYvUq7ZrZpmOG97h2j0=",
+			"path": "code.aliyun.com/wyunshare/thrift-server/pool",
+			"revision": "5bfda977a3b3585ebacca7fbce9e288cfbd6a33b",
+			"revisionTime": "2017-06-24T08:02:23Z"
+		},
+		{
+			"checksumSHA1": "Q8sHqyDCqyPXZesQ8fTCm5/5MzM=",
+			"path": "code.aliyun.com/wyunshare/thrift-server/processor",
+			"revision": "5bfda977a3b3585ebacca7fbce9e288cfbd6a33b",
+			"revisionTime": "2017-06-24T08:02:23Z"
+		},
+		{
+			"checksumSHA1": "S0xnKEe2vxPlps1dmQwRiNPKvps=",
+			"path": "git.apache.org/thrift.git/lib/go/thrift",
+			"revision": "2b1b32c2836c21ce012d39ebc02c8488d67d4cef",
+			"revisionTime": "2017-05-30T10:44:56Z"
+		},
+		{
+			"checksumSHA1": "SkoyrWJR3OI+AZ80xbndVye1Gzc=",
+			"path": "github.com/astaxie/beego",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "DPEoKPetckr8n6lCykMu3Po3PAs=",
+			"path": "github.com/astaxie/beego/config",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "iZ7Nlj++9sGGrw8mmYpA9Sm2SbI=",
+			"path": "github.com/astaxie/beego/context",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "+5TpkCiIAd6g6ecRkPbGS/Ivbl8=",
+			"path": "github.com/astaxie/beego/context/param",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "2Zx/H7cxwDneCICsKGGwMH1xnpE=",
+			"path": "github.com/astaxie/beego/grace",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "344q9RmrnioQ8oSNrxuBA1/Rpp0=",
+			"path": "github.com/astaxie/beego/logs",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "nn1W52oRi2Hqt1jzIUA7/KTij/0=",
+			"path": "github.com/astaxie/beego/orm",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "WGnti4OYSissIV67mLh9a14lwxk=",
+			"path": "github.com/astaxie/beego/session",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "B6+D5EMUhOmo6I5wIVoTwNfcsV8=",
+			"path": "github.com/astaxie/beego/toolbox",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "wyz5HgdoDurteHhp63m+CwKx7zg=",
+			"path": "github.com/astaxie/beego/utils",
+			"revision": "cab8458c1c4a5a3b4bf5192922be620e6dede15b",
+			"revisionTime": "2017-05-19T13:19:18Z"
+		},
+		{
+			"checksumSHA1": "8GIsvH50Ty+BFVuOpKldYVPoAoE=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "e3f0fdcf52770a162d5a4540ddb8d9957ff456d1",
+			"revisionTime": "2017-06-01T06:26:16Z"
+		},
+		{
+			"checksumSHA1": "0eIf9S2wU7EjKgg3qGPKI+Z6RJA=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b",
+			"revisionTime": "2017-04-07T17:21:22Z"
+		}
+	],
+	"rootPath": "airport-cloud/base-info"
+}

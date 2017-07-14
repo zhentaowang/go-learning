@@ -1,0 +1,912 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /airport-traffic
+paths:
+  /pr_bus_route/:
+    get:
+      tags:
+      - pr_bus_route
+      description: get PrBusRoute
+      operationId: PrBusRouteController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrBusRoute'
+        "403": {}
+    post:
+      tags:
+      - pr_bus_route
+      description: create PrBusRoute
+      operationId: PrBusRouteController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for PrBusRoute content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrBusRoute'
+      responses:
+        "201":
+          description: '{int} models.PrBusRoute'
+        "403":
+          description: body is empty
+  /pr_bus_route/{id}:
+    get:
+      tags:
+      - pr_bus_route
+      description: get PrBusRoute by id
+      operationId: PrBusRouteController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrBusRoute'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - pr_bus_route
+      description: update the PrBusRoute
+      operationId: PrBusRouteController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for PrBusRoute content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrBusRoute'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrBusRoute'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - pr_bus_route
+      description: delete the PrBusRoute
+      operationId: PrBusRouteController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /pr_bus_station/:
+    get:
+      tags:
+      - pr_bus_station
+      description: get PrBusStation
+      operationId: PrBusStationController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrBusStation'
+        "403": {}
+    post:
+      tags:
+      - pr_bus_station
+      description: create PrBusStation
+      operationId: PrBusStationController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for PrBusStation content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrBusStation'
+      responses:
+        "201":
+          description: '{int} models.PrBusStation'
+        "403":
+          description: body is empty
+  /pr_bus_station/{id}:
+    get:
+      tags:
+      - pr_bus_station
+      description: get PrBusStation by id
+      operationId: PrBusStationController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrBusStation'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - pr_bus_station
+      description: update the PrBusStation
+      operationId: PrBusStationController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for PrBusStation content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrBusStation'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrBusStation'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - pr_bus_station
+      description: delete the PrBusStation
+      operationId: PrBusStationController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /pr_parking_lot/:
+    get:
+      tags:
+      - pr_parking_lot
+      description: get PrParkingLot
+      operationId: PrParkingLotController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingLot'
+        "403": {}
+    post:
+      tags:
+      - pr_parking_lot
+      description: create PrParkingLot
+      operationId: PrParkingLotController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for PrParkingLot content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrParkingLot'
+      responses:
+        "201":
+          description: '{int} models.PrParkingLot'
+        "403":
+          description: body is empty
+  /pr_parking_lot/{id}:
+    get:
+      tags:
+      - pr_parking_lot
+      description: get PrParkingLot by id
+      operationId: PrParkingLotController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingLot'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - pr_parking_lot
+      description: update the PrParkingLot
+      operationId: PrParkingLotController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for PrParkingLot content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrParkingLot'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingLot'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - pr_parking_lot
+      description: delete the PrParkingLot
+      operationId: PrParkingLotController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /pr_parking_meter/:
+    get:
+      tags:
+      - pr_parking_meter
+      description: get PrParkingMeter
+      operationId: PrParkingMeterController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingMeter'
+        "403": {}
+    post:
+      tags:
+      - pr_parking_meter
+      description: create PrParkingMeter
+      operationId: PrParkingMeterController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for PrParkingMeter content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrParkingMeter'
+      responses:
+        "201":
+          description: '{int} models.PrParkingMeter'
+        "403":
+          description: body is empty
+  /pr_parking_meter/{id}:
+    get:
+      tags:
+      - pr_parking_meter
+      description: get PrParkingMeter by id
+      operationId: PrParkingMeterController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingMeter'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - pr_parking_meter
+      description: update the PrParkingMeter
+      operationId: PrParkingMeterController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for PrParkingMeter content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrParkingMeter'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingMeter'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - pr_parking_meter
+      description: delete the PrParkingMeter
+      operationId: PrParkingMeterController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /pr_parking_service/:
+    get:
+      tags:
+      - pr_parking_service
+      description: get PrParkingService
+      operationId: PrParkingServiceController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingService'
+        "403": {}
+    post:
+      tags:
+      - pr_parking_service
+      description: create PrParkingService
+      operationId: PrParkingServiceController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for PrParkingService content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrParkingService'
+      responses:
+        "201":
+          description: '{int} models.PrParkingService'
+        "403":
+          description: body is empty
+  /pr_parking_service/{id}:
+    get:
+      tags:
+      - pr_parking_service
+      description: get PrParkingService by id
+      operationId: PrParkingServiceController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingService'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - pr_parking_service
+      description: update the PrParkingService
+      operationId: PrParkingServiceController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for PrParkingService content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrParkingService'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrParkingService'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - pr_parking_service
+      description: delete the PrParkingService
+      operationId: PrParkingServiceController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+  /pr_terminal_point/:
+    get:
+      tags:
+      - pr_terminal_point
+      description: get PrTerminalPoint
+      operationId: PrTerminalPointController.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrTerminalPoint'
+        "403": {}
+    post:
+      tags:
+      - pr_terminal_point
+      description: create PrTerminalPoint
+      operationId: PrTerminalPointController.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for PrTerminalPoint content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrTerminalPoint'
+      responses:
+        "201":
+          description: '{int} models.PrTerminalPoint'
+        "403":
+          description: body is empty
+  /pr_terminal_point/{id}:
+    get:
+      tags:
+      - pr_terminal_point
+      description: get PrTerminalPoint by id
+      operationId: PrTerminalPointController.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrTerminalPoint'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - pr_terminal_point
+      description: update the PrTerminalPoint
+      operationId: PrTerminalPointController.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for PrTerminalPoint content
+        required: true
+        schema:
+          $ref: '#/definitions/models.PrTerminalPoint'
+      responses:
+        "200":
+          schema:
+            $ref: '#/definitions/models.PrTerminalPoint'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - pr_terminal_point
+      description: delete the PrTerminalPoint
+      operationId: PrTerminalPointController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+definitions:
+  models.PrBusRoute:
+    title: PrBusRoute
+    type: object
+    properties:
+      CreateTime:
+        type: string
+        format: string
+      CreateUser:
+        type: integer
+        format: int64
+      FirstBus:
+        type: string
+      Hotline:
+        type: string
+      Id:
+        type: integer
+        format: int64
+      IsDeleted:
+        type: integer
+        format: int32
+      LastBus:
+        type: string
+      ParentId:
+        type: integer
+        format: int64
+      RouteDescription:
+        type: string
+      RouteName:
+        type: string
+      RouteType:
+        type: integer
+        format: int32
+      TrafficId:
+        type: integer
+        format: int64
+      UpdateTime:
+        type: string
+        format: string
+      UpdateUser:
+        type: integer
+        format: int64
+  models.PrBusStation:
+    title: PrBusStation
+    type: object
+    properties:
+      CreateTime:
+        type: string
+        format: string
+      CreateUser:
+        type: integer
+        format: int64
+      Hotline:
+        type: string
+      Id:
+        type: integer
+        format: int64
+      IsDeleted:
+        type: integer
+        format: int32
+      ShuttleBus:
+        type: string
+      StationAddress:
+        type: string
+      StationGis:
+        type: string
+      StationName:
+        type: string
+      UpdateTime:
+        type: string
+        format: string
+      UpdateUser:
+        type: integer
+        format: int64
+  models.PrParkingLot:
+    title: PrParkingLot
+    type: object
+    properties:
+      CreateTime:
+        type: string
+        format: string
+      CreateUser:
+        type: integer
+        format: int64
+      DepartureType:
+        type: integer
+        format: int32
+      Id:
+        type: integer
+        format: int64
+      IsDeleted:
+        type: integer
+        format: int32
+      ParkingArea:
+        type: string
+      ParkingName:
+        type: string
+      PositionDescription:
+        type: string
+      TrafficId:
+        type: integer
+        format: int64
+      UpdateTime:
+        type: string
+        format: string
+      UpdateUser:
+        type: integer
+        format: int64
+  models.PrParkingMeter:
+    title: PrParkingMeter
+    type: object
+    properties:
+      CreateTime:
+        type: string
+        format: string
+      CreateUser:
+        type: integer
+        format: int64
+      EndTime:
+        type: string
+        format: string
+      Id:
+        type: integer
+        format: int64
+      IsDeleted:
+        type: integer
+        format: int32
+      ParkingPrice:
+        type: number
+        format: double
+      Remark:
+        type: string
+      StartTime:
+        type: string
+        format: string
+      TimeUnit:
+        type: integer
+        format: int32
+      UpdateTime:
+        type: string
+        format: string
+      UpdateUser:
+        type: integer
+        format: int64
+  models.PrParkingService:
+    title: PrParkingService
+    type: object
+    properties:
+      CarType:
+        type: integer
+        format: int32
+      CreateTime:
+        type: string
+        format: string
+      CreateUser:
+        type: integer
+        format: int64
+      Id:
+        type: integer
+        format: int64
+      IsDeleted:
+        type: integer
+        format: int32
+      MeterId:
+        type: integer
+        format: int64
+      ParkingId:
+        type: integer
+        format: int64
+      Remark:
+        type: string
+      UpdateTime:
+        type: string
+        format: string
+      UpdateUser:
+        type: integer
+        format: int64
+  models.PrTerminalPoint:
+    title: PrTerminalPoint
+    type: object
+    properties:
+      CreateTime:
+        type: string
+        format: string
+      CreateUser:
+        type: integer
+        format: int64
+      Hotline:
+        type: string
+      Id:
+        type: integer
+        format: int64
+      IsDeleted:
+        type: integer
+        format: int32
+      Latitude:
+        type: string
+      Longitude:
+        type: string
+      TerminalAddress:
+        type: string
+      TerminalGis:
+        type: string
+      TerminalName:
+        type: string
+      TrafficId:
+        type: integer
+        format: int64
+      UpdateTime:
+        type: string
+        format: string
+      UpdateUser:
+        type: integer
+        format: int64
+tags:
+- name: pr_bus_route
+  description: |
+    PrBusRouteController operations for PrBusRoute
+- name: pr_bus_station
+  description: |
+    PrBusStationController operations for PrBusStation
+- name: pr_parking_lot
+  description: |
+    PrParkingLotController operations for PrParkingLot
+- name: pr_parking_meter
+  description: |
+    PrParkingMeterController operations for PrParkingMeter
+- name: pr_parking_service
+  description: |
+    PrParkingServiceController operations for PrParkingService
+- name: pr_terminal_point
+  description: |
+    PrTerminalPointController operations for PrTerminalPoint

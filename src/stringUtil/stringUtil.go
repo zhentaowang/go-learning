@@ -5,6 +5,9 @@ import (
     //"unicode/utf8"
 )
 func main() {
+    //func TrimSpace(s string) string,清楚文本里边的空白操作\r\n\t
+    fmt.Println(strings.TrimSpace("PEKCAN\tCZ3162\t94.9\t北京首都\t广州白云\tT2\tT2\t2015-07-17 14:30:00\t2015-07-17 17:45:00\t0001-01-01\t0001-01-01\t计划\nPEKCAN\tCZ3162\t94.9\t北京首都\t广州白云\tT2\tT2\t2015-07-17 14:30:00\t2015-07-17 17:45:00\t0001-01-01\t0001-01-01\t计划"))
+    //当用strings.replace去除报错：\r is invalid char，采用TrimSpace去除空格方法
     fmt.Println("查找子串是否在指定的字符串中")
     fmt.Println(" Contains 函数的用法")
     fmt.Println(strings.Contains("seafood", "foo")) //true
